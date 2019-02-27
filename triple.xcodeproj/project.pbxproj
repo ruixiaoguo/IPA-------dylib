@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2101DA32221E79DD0098DB70 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2101DA31221E79DD0098DB70 /* MDConfig.plist */; };
+		2101DA3C221E79DE0098DB70 /* libtripleDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2101DA3B221E79DE0098DB70 /* libtripleDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2101DA41221E79DE0098DB70 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2101DA40221E79DE0098DB70 /* JavaScriptCore.framework */; };
+		2101DA43221E79DE0098DB70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2101DA42221E79DE0098DB70 /* Foundation.framework */; };
+		2101DA45221E79DE0098DB70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2101DA44221E79DE0098DB70 /* UIKit.framework */; };
+		2101DA4A221E79DE0098DB70 /* tripleDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA49221E79DE0098DB70 /* tripleDylib.mm */; };
+		2101DA4D221E79DE0098DB70 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA4C221E79DE0098DB70 /* MDConfigManager.h */; };
+		2101DA4F221E79DE0098DB70 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA4E221E79DE0098DB70 /* MDConfigManager.m */; };
+		2101DA51221E79DE0098DB70 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA50221E79DE0098DB70 /* MDCycriptManager.h */; };
+		2101DA53221E79DE0098DB70 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA52221E79DE0098DB70 /* MDCycriptManager.m */; };
+		2101DA55221E79DE0098DB70 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA54221E79DE0098DB70 /* MDMethodTrace.h */; };
+		2101DA57221E79DE0098DB70 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA56221E79DE0098DB70 /* MDMethodTrace.m */; };
+		2101DA5A221E79DE0098DB70 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA59221E79DE0098DB70 /* a1a2-selectortramps-arm.s */; };
+		2101DA5C221E79DE0098DB70 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA5B221E79DE0098DB70 /* a1a2-selectortramps-arm64.s */; };
+		2101DA5E221E79DE0098DB70 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA5D221E79DE0098DB70 /* a1a2-selectortramps-i386.s */; };
+		2101DA60221E79DE0098DB70 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA5F221E79DE0098DB70 /* a1a2-selectortramps-x86_64.s */; };
+		2101DA62221E79DE0098DB70 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA61221E79DE0098DB70 /* a2a3-selectortramps-arm.s */; };
+		2101DA64221E79DE0098DB70 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA63221E79DE0098DB70 /* a2a3-selectortramps-i386.s */; };
+		2101DA66221E79DE0098DB70 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA65221E79DE0098DB70 /* a2a3-selectortramps-x86_64.s */; };
+		2101DA68221E79DE0098DB70 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA67221E79DE0098DB70 /* OCMethodTrace.h */; };
+		2101DA6A221E79DE0098DB70 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA69221E79DE0098DB70 /* OCMethodTrace.m */; };
+		2101DA6C221E79DE0098DB70 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA6B221E79DE0098DB70 /* OCSelectorTrampolines.h */; };
+		2101DA6E221E79DE0098DB70 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA6D221E79DE0098DB70 /* OCSelectorTrampolines.mm */; };
+		2101DA72221E79DE0098DB70 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA71221E79DE0098DB70 /* LLDBTools.h */; };
+		2101DA74221E79DE0098DB70 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA73221E79DE0098DB70 /* LLDBTools.mm */; };
+		2101DA79221E79DE0098DB70 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA78221E79DE0098DB70 /* AntiAntiDebug.m */; };
+		2101DA7C221E79DE0098DB70 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA7B221E79DE0098DB70 /* fishhook.c */; };
+		2101DA7E221E79DE0098DB70 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA7D221E79DE0098DB70 /* fishhook.h */; };
+		2101DA80221E79DE0098DB70 /* tripleDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2101DA7F221E79DE0098DB70 /* tripleDylib.h */; };
+		2101DA82221E79DE0098DB70 /* tripleDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2101DA81221E79DE0098DB70 /* tripleDylib.m */; };
+		2101DAF0221EB6150098DB70 /* Payload.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 2101DAEF221EB6150098DB70 /* Payload.ipa */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2101DA3D221E79DE0098DB70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2101DA1F221E79DD0098DB70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2101DA3A221E79DE0098DB70;
+			remoteInfo = tripleDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2101DA27221E79DD0098DB70 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2101DA3C221E79DE0098DB70 /* libtripleDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2101DA2A221E79DD0098DB70 /* triple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = triple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2101DA2D221E79DD0098DB70 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2101DA2F221E79DD0098DB70 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		2101DA31221E79DD0098DB70 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		2101DA34221E79DD0098DB70 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		2101DA35221E79DD0098DB70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2101DA3B221E79DE0098DB70 /* libtripleDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtripleDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		2101DA40221E79DE0098DB70 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2101DA42221E79DE0098DB70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2101DA44221E79DE0098DB70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2101DA48221E79DE0098DB70 /* tripleDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = tripleDylib.xm; path = Logos/tripleDylib.xm; sourceTree = "<group>"; };
+		2101DA49221E79DE0098DB70 /* tripleDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = tripleDylib.mm; path = Logos/tripleDylib.mm; sourceTree = "<group>"; };
+		2101DA4C221E79DE0098DB70 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		2101DA4E221E79DE0098DB70 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		2101DA50221E79DE0098DB70 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		2101DA52221E79DE0098DB70 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		2101DA54221E79DE0098DB70 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		2101DA56221E79DE0098DB70 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		2101DA59221E79DE0098DB70 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		2101DA5B221E79DE0098DB70 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		2101DA5D221E79DE0098DB70 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		2101DA5F221E79DE0098DB70 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		2101DA61221E79DE0098DB70 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		2101DA63221E79DE0098DB70 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		2101DA65221E79DE0098DB70 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		2101DA67221E79DE0098DB70 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		2101DA69221E79DE0098DB70 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		2101DA6B221E79DE0098DB70 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		2101DA6D221E79DE0098DB70 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		2101DA6F221E79DE0098DB70 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		2101DA71221E79DE0098DB70 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		2101DA73221E79DE0098DB70 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		2101DA76221E79DE0098DB70 /* tripleDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tripleDylib-Prefix.pch"; sourceTree = "<group>"; };
+		2101DA78221E79DE0098DB70 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		2101DA7B221E79DE0098DB70 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		2101DA7D221E79DE0098DB70 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		2101DA7F221E79DE0098DB70 /* tripleDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tripleDylib.h; sourceTree = "<group>"; };
+		2101DA81221E79DE0098DB70 /* tripleDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tripleDylib.m; sourceTree = "<group>"; };
+		2101DAEF221EB6150098DB70 /* Payload.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = Payload.ipa; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2101DA24221E79DD0098DB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2101DA38221E79DE0098DB70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2101DA41221E79DE0098DB70 /* JavaScriptCore.framework in Frameworks */,
+				2101DA45221E79DE0098DB70 /* UIKit.framework in Frameworks */,
+				2101DA43221E79DE0098DB70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2101DA1E221E79DD0098DB70 = {
+			isa = PBXGroup;
+			children = (
+				2101DA2C221E79DD0098DB70 /* triple */,
+				2101DA46221E79DE0098DB70 /* tripleDylib */,
+				2101DA3F221E79DE0098DB70 /* Frameworks */,
+				2101DA2B221E79DD0098DB70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2101DA2B221E79DD0098DB70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA2A221E79DD0098DB70 /* triple.app */,
+				2101DA3B221E79DE0098DB70 /* libtripleDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2101DA2C221E79DD0098DB70 /* triple */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA2D221E79DD0098DB70 /* icon.png */,
+				2101DA35221E79DD0098DB70 /* Info.plist */,
+				2101DA2E221E79DD0098DB70 /* Scripts */,
+				2101DA30221E79DD0098DB70 /* Config */,
+				2101DA33221E79DD0098DB70 /* TargetApp */,
+			);
+			path = triple;
+			sourceTree = "<group>";
+		};
+		2101DA2E221E79DD0098DB70 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA2F221E79DD0098DB70 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		2101DA30221E79DD0098DB70 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA31221E79DD0098DB70 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		2101DA33221E79DD0098DB70 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				2101DAEF221EB6150098DB70 /* Payload.ipa */,
+				2101DA34221E79DD0098DB70 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		2101DA3F221E79DE0098DB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA40221E79DE0098DB70 /* JavaScriptCore.framework */,
+				2101DA42221E79DE0098DB70 /* Foundation.framework */,
+				2101DA44221E79DE0098DB70 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2101DA46221E79DE0098DB70 /* tripleDylib */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA7F221E79DE0098DB70 /* tripleDylib.h */,
+				2101DA81221E79DE0098DB70 /* tripleDylib.m */,
+				2101DA47221E79DE0098DB70 /* Logos */,
+				2101DA4B221E79DE0098DB70 /* Config */,
+				2101DA58221E79DE0098DB70 /* Trace */,
+				2101DA70221E79DE0098DB70 /* Tools */,
+				2101DA77221E79DE0098DB70 /* AntiAntiDebug */,
+				2101DA7A221E79DE0098DB70 /* fishhook */,
+				2101DA75221E79DE0098DB70 /* Supporting Files */,
+			);
+			path = tripleDylib;
+			sourceTree = "<group>";
+		};
+		2101DA47221E79DE0098DB70 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA48221E79DE0098DB70 /* tripleDylib.xm */,
+				2101DA49221E79DE0098DB70 /* tripleDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		2101DA4B221E79DE0098DB70 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA4C221E79DE0098DB70 /* MDConfigManager.h */,
+				2101DA4E221E79DE0098DB70 /* MDConfigManager.m */,
+				2101DA50221E79DE0098DB70 /* MDCycriptManager.h */,
+				2101DA52221E79DE0098DB70 /* MDCycriptManager.m */,
+				2101DA54221E79DE0098DB70 /* MDMethodTrace.h */,
+				2101DA56221E79DE0098DB70 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		2101DA58221E79DE0098DB70 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA59221E79DE0098DB70 /* a1a2-selectortramps-arm.s */,
+				2101DA5B221E79DE0098DB70 /* a1a2-selectortramps-arm64.s */,
+				2101DA5D221E79DE0098DB70 /* a1a2-selectortramps-i386.s */,
+				2101DA5F221E79DE0098DB70 /* a1a2-selectortramps-x86_64.s */,
+				2101DA61221E79DE0098DB70 /* a2a3-selectortramps-arm.s */,
+				2101DA63221E79DE0098DB70 /* a2a3-selectortramps-i386.s */,
+				2101DA65221E79DE0098DB70 /* a2a3-selectortramps-x86_64.s */,
+				2101DA67221E79DE0098DB70 /* OCMethodTrace.h */,
+				2101DA69221E79DE0098DB70 /* OCMethodTrace.m */,
+				2101DA6B221E79DE0098DB70 /* OCSelectorTrampolines.h */,
+				2101DA6D221E79DE0098DB70 /* OCSelectorTrampolines.mm */,
+				2101DA6F221E79DE0098DB70 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		2101DA70221E79DE0098DB70 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA71221E79DE0098DB70 /* LLDBTools.h */,
+				2101DA73221E79DE0098DB70 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		2101DA75221E79DE0098DB70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA76221E79DE0098DB70 /* tripleDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2101DA77221E79DE0098DB70 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA78221E79DE0098DB70 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		2101DA7A221E79DE0098DB70 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				2101DA7B221E79DE0098DB70 /* fishhook.c */,
+				2101DA7D221E79DE0098DB70 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2101DA39221E79DE0098DB70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2101DA51221E79DE0098DB70 /* MDCycriptManager.h in Headers */,
+				2101DA55221E79DE0098DB70 /* MDMethodTrace.h in Headers */,
+				2101DA7E221E79DE0098DB70 /* fishhook.h in Headers */,
+				2101DA72221E79DE0098DB70 /* LLDBTools.h in Headers */,
+				2101DA4D221E79DE0098DB70 /* MDConfigManager.h in Headers */,
+				2101DA6C221E79DE0098DB70 /* OCSelectorTrampolines.h in Headers */,
+				2101DA68221E79DE0098DB70 /* OCMethodTrace.h in Headers */,
+				2101DA80221E79DE0098DB70 /* tripleDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2101DA29221E79DD0098DB70 /* triple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2101DA88221E79DE0098DB70 /* Build configuration list for PBXNativeTarget "triple" */;
+			buildPhases = (
+				2101DA23221E79DD0098DB70 /* Sources */,
+				2101DA24221E79DD0098DB70 /* Frameworks */,
+				2101DA25221E79DD0098DB70 /* ShellScript */,
+				2101DA26221E79DD0098DB70 /* Resources */,
+				2101DA27221E79DD0098DB70 /* CopyFiles */,
+				2101DA28221E79DD0098DB70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2101DA3E221E79DE0098DB70 /* PBXTargetDependency */,
+			);
+			name = triple;
+			productName = triple;
+			productReference = 2101DA2A221E79DD0098DB70 /* triple.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2101DA3A221E79DE0098DB70 /* tripleDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2101DA85221E79DE0098DB70 /* Build configuration list for PBXNativeTarget "tripleDylib" */;
+			buildPhases = (
+				2101DA36221E79DE0098DB70 /* ShellScript */,
+				2101DA37221E79DE0098DB70 /* Sources */,
+				2101DA38221E79DE0098DB70 /* Frameworks */,
+				2101DA39221E79DE0098DB70 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tripleDylib;
+			productName = tripleDylib;
+			productReference = 2101DA3B221E79DE0098DB70 /* libtripleDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2101DA1F221E79DD0098DB70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = grx;
+				TargetAttributes = {
+					2101DA29221E79DD0098DB70 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2101DA3A221E79DE0098DB70 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2101DA22221E79DD0098DB70 /* Build configuration list for PBXProject "triple" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2101DA1E221E79DD0098DB70;
+			productRefGroup = 2101DA2B221E79DD0098DB70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2101DA29221E79DD0098DB70 /* triple */,
+				2101DA3A221E79DE0098DB70 /* tripleDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2101DA26221E79DD0098DB70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2101DA32221E79DD0098DB70 /* MDConfig.plist in Resources */,
+				2101DAF0221EB6150098DB70 /* Payload.ipa in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2101DA25221E79DD0098DB70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		2101DA28221E79DD0098DB70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		2101DA36221E79DE0098DB70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2101DA23221E79DD0098DB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2101DA37221E79DE0098DB70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2101DA53221E79DE0098DB70 /* MDCycriptManager.m in Sources */,
+				2101DA5C221E79DE0098DB70 /* a1a2-selectortramps-arm64.s in Sources */,
+				2101DA5A221E79DE0098DB70 /* a1a2-selectortramps-arm.s in Sources */,
+				2101DA60221E79DE0098DB70 /* a1a2-selectortramps-x86_64.s in Sources */,
+				2101DA6A221E79DE0098DB70 /* OCMethodTrace.m in Sources */,
+				2101DA82221E79DE0098DB70 /* tripleDylib.m in Sources */,
+				2101DA4F221E79DE0098DB70 /* MDConfigManager.m in Sources */,
+				2101DA7C221E79DE0098DB70 /* fishhook.c in Sources */,
+				2101DA79221E79DE0098DB70 /* AntiAntiDebug.m in Sources */,
+				2101DA6E221E79DE0098DB70 /* OCSelectorTrampolines.mm in Sources */,
+				2101DA5E221E79DE0098DB70 /* a1a2-selectortramps-i386.s in Sources */,
+				2101DA64221E79DE0098DB70 /* a2a3-selectortramps-i386.s in Sources */,
+				2101DA62221E79DE0098DB70 /* a2a3-selectortramps-arm.s in Sources */,
+				2101DA4A221E79DE0098DB70 /* tripleDylib.mm in Sources */,
+				2101DA74221E79DE0098DB70 /* LLDBTools.mm in Sources */,
+				2101DA66221E79DE0098DB70 /* a2a3-selectortramps-x86_64.s in Sources */,
+				2101DA57221E79DE0098DB70 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2101DA3E221E79DE0098DB70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2101DA3A221E79DE0098DB70 /* tripleDylib */;
+			targetProxy = 2101DA3D221E79DE0098DB70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2101DA83221E79DE0098DB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2101DA84221E79DE0098DB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2101DA86221E79DE0098DB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6V8555LML;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tripleDylib/tripleDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libtripleDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"tripleDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		2101DA87221E79DE0098DB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = Z6V8555LML;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tripleDylib/tripleDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libtripleDylib.dylib";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"tripleDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2101DA89221E79DE0098DB70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6V8555LML;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = triple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpic.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2101DA8A221E79DE0098DB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6V8555LML;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = triple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpic.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2101DA22221E79DD0098DB70 /* Build configuration list for PBXProject "triple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2101DA83221E79DE0098DB70 /* Debug */,
+				2101DA84221E79DE0098DB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2101DA85221E79DE0098DB70 /* Build configuration list for PBXNativeTarget "tripleDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2101DA86221E79DE0098DB70 /* Debug */,
+				2101DA87221E79DE0098DB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2101DA88221E79DE0098DB70 /* Build configuration list for PBXNativeTarget "triple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2101DA89221E79DE0098DB70 /* Debug */,
+				2101DA8A221E79DE0098DB70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2101DA1F221E79DD0098DB70 /* Project object */;
+}
